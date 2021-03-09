@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from time import sleep
 from random import randint, choice
 
@@ -25,18 +24,6 @@ class InstaBot:
         enterButton.click()
         sleep(10)
 
-        try:
-            saveInfoQuestion = self.bot.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/section/div/div[2]')
-            dontSaveInfoButton = self.bot.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/div/button')
-            dontSaveInfoButton.click()
-            sleep(5)
-
-            dontGetNotificationsButton = self.bot.find_element_by_xpath('/html/body/div[5]/div/div/div/div[3]/button[2]')
-            dontGetNotificationsButton.click()
-            sleep(5)
-            
-        except Exception as err:
-            print('SaveInfos not found')
 
         # Change here to the URL of the post you want to comment
         postURL = "https://www.instagram.com/p/exampleURL/"
@@ -92,7 +79,7 @@ class InstaBot:
 # Gets the infos about the user to login
 userLogin = str(input('Login: '))
 userPassword = str(input('Password: '))
-# you can comment the lines above and write directly in the line 94 below if you prefer
 
+# you can comment the lines above and write directly in the login method below
 bot = InstaBot()
 bot.login(userLogin, userPassword)
