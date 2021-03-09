@@ -54,6 +54,14 @@ O programa irá rodar e vai pedir seu login e depois a senha. A partir daí, é 
 
 
 
+## Opcional
+
+Se você quiser, pode escolher o número de vezes que o bot vai comentar no post. O valor padrão é 5, porque geralmente quando passava disso, o Instagram as vezes impedia de fazer mais comentários.
+
+Pra trocar é bem simples, basta alterar a linha abaixo pro valor que você preferir:
+
+![Quantidade de comentarios](./imgs/timesToComment.png)
+
 # Créditos
 
 Eu não estava conseguindo inserir os comentários no campo de texto do instagram e acabei deixando o projeto um pouco de lado. Mas depois de muito tempo, o Youtube me recomendou um vídeo do canal [DevAprender](https://www.youtube.com/channel/UCm63tB8wsKOVvxoU4iMpS2A), que ensinava a criar um bot que comentava em fotos do Instagram.
